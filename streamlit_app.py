@@ -32,11 +32,11 @@ if (model == 'Linear Regression'):
   lr_model.fit(X_train, y_train)
 
 elif (model == 'Random Forest (Recommended)'):
-  rf_model = RandomForestRegressor(max_depth = 30, min_samples_split = 2, n_estimators = 10, random_state = 427)
+  rf_model = RandomForestRegressor(max_depth = 30, min_samples_split = 2, n_estimators = 100, random_state = 427)
   rf_model.fit(X_train, y_train)
 
 elif (model == 'Decision Tree'):
-  dt_model = DecisionTreeRegressor(max_depth = 20, max_leaf_nodes = 80, min_samples_split = 2, random_state = 427)
+  dt_model = DecisionTreeRegressor(max_depth = 40, max_leaf_nodes = 50, min_samples_split = 2, random_state = 427)
   dt_model.fit(X_train, y_train)
 
 predictx = pd.DataFrame({
