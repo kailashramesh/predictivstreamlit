@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('data/logo.png')
+image = Image.open('logo.png')
 st.image(image)
 
 st.header("Greetings! With Predict-IV you can input your desired features and one of our models (of your choosing) will predict the monthly rent for your desired place of residence")
