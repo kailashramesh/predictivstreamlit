@@ -10,7 +10,7 @@ year = st.slider("Year", 1970,2070)
 bedroom = st.number_input("Bedrooms", min_value = 0, step = 1)
 bathroom = st.number_input("Bathrooms", min_value = 0, step = 1)
 leasor = st.selectbox("Leasor Name", leasors)
-street = st.selectbox("Street Name", street)
+street = st.selectbox("Street Name", streets)
 pred = st.button("Predict Price")
 
 import numpy as np
