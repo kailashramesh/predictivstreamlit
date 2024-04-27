@@ -57,11 +57,13 @@ if (pred):
     else:
       st.subheader("Your predicted monthly rent is: -$" + str('{0:.2f}'.format(abs(price[0][0]))))
   elif (model == 'Random Forest (Recommended'):
+    price = rf_model.predict(predictx)
     if (price >= 0):
       st.subheader("Your predicted monthly rent is: $" + str('{0:.2f}'.format(price[0])))
     else:
       st.subheader("Your predicted monthly rent is: -$" + str('{0:.2f}'.format(abs(price[0]))))
   elif (model == "Decision Tree"):
+    price = dt_model.predict(predictx)
     if (price >= 0):
       st.subheader("Your predicted monthly rent is: $" + str('{0:.2f}'.format(price[0])))
     else:
