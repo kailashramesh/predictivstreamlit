@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.image("https://i.ibb.co/419kCwH/E0-F2-A17-A-7-F25-4-FD1-85-F9-B4-AB50975-C3-D.jpg")
 st.header("Greetings! With Predict-IV you can input your desired features and one of our models (of your choosing) will predict the monthly rent for your desired place of residence")
 streets = ['Abrego', 'Camino Corto', 'Cordoba', 'Del Playa', 'El Embarcadero', 'El Nido', 'Embarcadero del Norte', 'Pasado', 'Picasso', 'Sabado Tarde', 'Seville', 'Sueno', 'Trigo', 'Cervantes', 'El Greco', 'Embarcadero del Mar', 'Madrid', 'Pardall', 'Segovia', 'Camino del Sur', 'El Colegio']
 
