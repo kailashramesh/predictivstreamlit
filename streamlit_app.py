@@ -7,7 +7,7 @@ streets = ['Abrego', 'Camino Corto', 'Cordoba', 'Del Playa', 'El Embarcadero', '
 leasors = ['KAMAP', 'Bartlein & Company, Inc.', 'Ben Roberts Properties', 'Harwin Management', 'Embarcadero Company', 'Wolfe and Associates', 'SFMVDM', 'Playa Life', 'Meridian', 'Ventura Investment Co', 'ICON', 'CBC Sweeps Essex', 'Gallagher Property', 'Micahel Gilson']
 
 model = st.radio("ML Model", ["Linear Regression", "Random Forest (Recommended)", "Decision Tree"])
-year = st.slider("Year", 1970,2040)
+year = st.slider("Year", 2015,2040)
 bedroom = st.number_input("Bedrooms", min_value = 0, step = 1)
 bathroom = st.number_input("Bathrooms", min_value = 0, step = 1)
 leasor = st.selectbox("Leasor Name", leasors)
